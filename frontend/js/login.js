@@ -1,11 +1,14 @@
-document.getElementById('loginBtn').addEventListener('click', () => {
-    const username = document.getElementById('username').value.trim();
-    const password = document.getElementById('password').value.trim();
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
   
-    if (username === "admin" && password === "admin123") {
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const loginError = document.getElementById("loginError");
+  
+    if (username === "admin" && password === "adminbot123") {
       window.location.href = "admin-dashboard.html";
     } else {
-      alert("Invalid credentials. Please try again.");
+      loginError.innerHTML = "Invalid username or password.";
     }
   });
   
