@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(135deg, #e8f0fe, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h2 {
+    color: #003366;
+  }
+  
+  .card {
+    border-radius: 15px;
+    border: none;
+  }
+  
